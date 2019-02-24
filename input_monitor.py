@@ -1,8 +1,7 @@
 from pynput import mouse
 from pynput import keyboard
-import utils
+from utils import *
 
-def on_m
 lis1 = keyboard.Listener(
         on_press=on_press,
         on_release=on_release)
