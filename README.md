@@ -1,40 +1,45 @@
 # Game Monitor
-###### Blue orchid is a script that when given a language and a subject will extract data from wikipedia, using the section titles as labels and the sentences between two labels as training data. Then, a LSTM classifier will be trained and saved to be re-used later
-###### Edit, as LSTM were not very efficient as th.ere was not enough data, I decided to switch to random forest
+###### The objective is to extract data from a user playing a video game, mouse click, keyboard strokes, eye gaze detection, some screenshots and also some comments in text formats. Then to aggregate those data and to extract some insight from it in order to help in video games developement.
 
 ## Motivation: 
-The project is to easily create and serve text classifier in any language on any given subject using the wide open knowledge repository available in wikipedia. Others objectives where also to get a better understanding of LSTM and arg-parse
+The project is to create a full pipeline from data extraction to data storage and engineering and also dashboarding to drive game developement. 
 
 ## Tech/Frameworks used:
-- [keras](https://keras.io/)
 - spacy
 - pandas
-- beautifull soup
-- wikipedia api
+- opencv
+- pyinput
+- mongodb
+- dlib
 
 ## Project Structure:
-- blue_orchid.py
 - utils.py
 
 ## Features:
-- [x] Extracting the data from wikipedia and save them as a dataset
-- [x] Defining the right LSTM implementation to train the model
-- [x] Saving the model
-- [x] Serving the model
-- [ ] Create an executable that uses argparse, to ask for training or using and then asks for the language and subject or model and sentence to classify
+- [x] Extracting date for keyboard stroke and pressed key
+- [x] Extracting date for mouse click
+- [ ] Taking screenshots at regular intervals
+- [ ] Taking screenshots at mouse click
+- [ ] Gaze detection at regular intervals
+- [ ] Gaze detection at mouse click
+- [ ] Fetching text from comments
+- [ ] Storing the data in mongodb format
+- [ ] Perform analysis on the data
 
 ## Workflow:
 
-*Training
-1. Given as input a language and a subject
-2. The ad hoc dataset will be created
-3. The LSTM network will be trained on those data
-4. The model will be saved as the_subject_language.h5
+*Getting the data from client
+1. Lorem ipsum dolor
 
-*using the model
-1. Given as input a language, a subject and a string to classify
-2. The ad hoc model will be selected and loaded
-3. The string will go through the network and classify the string 
+*Sending data from the client
+1. Lorem ipsum dolor
+
+*Storing the data in mongo db
+1. Lorem ipsum dolor
+
+*Performing analysis on the data
+1. Lorem ipsum dolor
+
 
 ## How to use:
 
