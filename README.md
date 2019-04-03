@@ -1,6 +1,6 @@
 # Game Monitor
 ###### The objective is to extract data from a user playing a video game, mouse click, keyboard strokes, eye gaze detection, some screenshots and also some comments in text formats. Then to aggregate those data and to extract some insight from it in order to help in video games developement.
-
+![alt text](https://www.gre.ac.uk/__data/assets/image/0011/1191953/analysis-banner.jpg)
 ## Motivation: 
 The project is to create a full pipeline from data extraction to data storage and engineering and also dashboarding to drive game developement. 
 
